@@ -51,7 +51,7 @@ public class ContactViewerController extends Window {
                 "3###", "5346265", "kapelusz.png"));
         contactsListView.setItems(contacts); // bind booksListView to books
 
-        String path =  new Image("kapelusz.png").getUrl();
+        String path =  new File("kapelusz.png").getPath();
 
 
         logger.log(Level.CONFIG, "image path" + path);
@@ -66,7 +66,7 @@ public class ContactViewerController extends Window {
                                 nameTextField.setText(newValue.getName());
                                 emailTextField.setText(newValue.getEmail());
                                 phoneTextField.setText(newValue.getPhoneNumber());
-                                ImageView.setImage(new Image(newValue.getImagePath()));
+                                ImageView.setImage(new Image("file:\\" + newValue.getImagePath()));
                             }
                         }
                 );
@@ -99,19 +99,15 @@ public class ContactViewerController extends Window {
     @FXML
     void addImage(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Open Resource File");
+        fileChooser.setTitle("Wybierz zdjęcie");
         File file = fileChooser.showOpenDialog(this);
 
-        String patht = ImageView.getImage().getUrl();
-
-
         String path = file.getPath();
-        //  C:\Users\krzys\Programowanie\Java\ContactCustom\src\kapelusz.png
-        logger.log(Level.INFO, patht +"Here is some INFO" + path);
+        logger.log(Level.CONFIG, " Here is some INFO " + path);
 
         ImageView.setImage(new Image("file:\\" + path));
 
-        }
+    }
 
     }
 
