@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chapter4ControlStatements1Assignment.GUI.DrawLinesController">
+    <children>
+        <BorderPane>
+            <top>
+                <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                        <Button mnemonicParsing="false" onAction="#drawLineButtonPressed" text="Draw line" />
+                        <Button mnemonicParsing="false" onAction="#drawLinesButtonPressed" text="Draw lines" />
+                        <Button mnemonicParsing="false" onAction="#draw4xLinesButtonPressed" text="Draw 4x line" />
+                        <Button mnemonicParsing="false" onAction="#clear" text="Clear" />
+                        <Button mnemonicParsing="false" onAction="#drawLineButtonPressed" text="Draw line" />
+                    </items>
+                </ToolBar>
+            </top>
+            <center>
+                <Canvas fx:id="canvas" height="360.0" width="400.0" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </children>
+</VBox>
