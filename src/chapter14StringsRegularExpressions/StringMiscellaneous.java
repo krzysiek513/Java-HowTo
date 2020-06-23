@@ -21,6 +21,7 @@ public class StringMiscellaneous {
         }
 
         // copy characters from string into charArray
+
         s1.getChars(0, 5, charArray, 0);
         System.out.printf("%nThe character array is: ");
 
