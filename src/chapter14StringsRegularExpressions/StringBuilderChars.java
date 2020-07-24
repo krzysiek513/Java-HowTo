@@ -14,6 +14,10 @@ public class StringBuilderChars {
         buffer.getChars(0, buffer.length(), charArray, 0);
         System.out.print("The characters are: ");
 
+        char cos = charArray[1];
+
+        System.out.println(cos);
+
         for (char character : charArray) {
             System.out.print(character);
         }

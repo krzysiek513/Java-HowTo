@@ -18,7 +18,7 @@ public class TokenTest {
                 tokens.length);
 
         for (String token : tokens) {
-            System.out.println(tokens);
+            System.out.println(token);
         }
     }
 }
