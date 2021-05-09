@@ -36,16 +36,16 @@ public class ArrayManipulations {
         b = Arrays.equals(intArray, filledIntArray);
         System.out.printf("intArray %s filledIntArray%n",
                 (b ? "==" : "!="));
-
+        int number = 5;
         // search intArray for the value 5
-        int location = Arrays.binarySearch(intArray, 5);
+        int location = Arrays.binarySearch(intArray, number);
 
-        if (location <= 0) {
+        if (location >= 0) {
             System.out.printf(
-                    "Found 5 at element %d in intArray%n", location);
+                    "Found 5 at element %d in intArray%n", location + 1);
         }
         else {
-            System.out.println("5 not found in intArray");
+            System.out.println("54 not found in intArray");
         }
 
         // search intArray for the value 8763
@@ -53,7 +53,7 @@ public class ArrayManipulations {
 
         if (location >= 0) {
             System.out.printf(
-                    "Found 8763 at element %d in intArray%n", location);
+                    "Found 8763 at element %d in intArray%n", location + 1);
         }
         else {
             System.out.println("8763 not found in intArray");

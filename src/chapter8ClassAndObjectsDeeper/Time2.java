@@ -2,7 +2,8 @@ package chapter8ClassAndObjectsDeeper;
 
 // Fig. 8.5: Time2.java
 // Time2 class declaration with overloaded constructors.
-public class Time2 {
+public class
+Time2 {
     private int hour; // 0 - 23
     private int minute; // 0 - 59
     private int second; // 0 - 59
